@@ -1,0 +1,147 @@
+.patients{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: calc(100vh - 80px);
+}
+
+.prequests, .papprove, .pform{
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.pform{
+    display: flex;
+    border: 2px solid #d3d3d3;
+    height: 90%;
+    flex: 1;
+    margin: 0 10px;
+}    
+
+.prequests, .papprove{
+    display: flex;
+    border: 2px solid #d3d3d3;
+    height: 90%;
+    flex: 0.6;
+    margin: 0 10px;
+    flex-direction: column;
+}
+
+.singleRequest{
+    padding: 20px;
+    background-color: #dbd9d9; 
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 3px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.review{
+    padding: 10px;
+    cursor: pointer;
+    border: solid 1px wheat;
+    font-weight: 700;
+}
+
+.form {
+    background-color: #15172b;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .title {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+  
+  .subtitle {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  
+  .input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .ic1 {
+    margin-top: 40px;
+  }
+  
+  .ic2 {
+    margin-top: 30px;
+  }
+  
+  .input {
+    background-color: #303245;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+  }
+  
+  .cut {
+    background-color: #15172b;
+    border-radius: 10px;
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 76px;
+  }
+  
+  .cut-short {
+    width: 50px;
+  }
+  
+  .placeholder {
+    color: #fff;
+    font-family: sans-serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+  }
+  
+  .input:not(:placeholder-shown) ~ .placeholder {
+    color: #808097;
+  }
+
+  .submit {
+    background-color: #08d;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 38px;
+    outline: 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .submit:active {
+    background-color: #06b;
+  }
+  
